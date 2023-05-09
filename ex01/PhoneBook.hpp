@@ -5,16 +5,16 @@
  #define MAX_CONTACTS 8
  #define MAX_LENGTH 10
 
- namespace format
- {
-	std::string formatString(std::string str, unsigned long length);
- }
+//  namespace format
+//  {
+// 	std::string formatString(std::string str, unsigned long length);
+//  }
 
  class PhoneBook
  {
  	public:
- 		PhoneBook(){this->_nb_contacts = 0;};
- 		~PhoneBook(){};
+ 		PhoneBook();
+ 		~PhoneBook();
  		void addContact();
  		void searchContact() const;
  	private:

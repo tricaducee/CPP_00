@@ -2,14 +2,16 @@
 #include <iostream>
 #include <iomanip>
 
-std::string format::formatString(std::string str, unsigned long length)
+std::string formatString(std::string str, unsigned long length)
 {
 	if (str.length() > length)
 		return str.substr(0, length - 1) + ".";
 	return str;
 }
 
-using namespace format;
+PhoneBook::PhoneBook() : _nb_contacts(0) {}
+
+PhoneBook::~PhoneBook() {}
 
 void PhoneBook::addContact()
 {

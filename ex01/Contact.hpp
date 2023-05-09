@@ -6,8 +6,8 @@
 	{
 		public:
 			//Contact() : _first_name("Jhon"), _last_name("Doe"), _nickname("Anonym"), _phone_number("0420424242"), _darkest_secret("I dont exist") {};
-			Contact(std::string first_name = "", std::string last_name = "", std::string nickname = "", std::string phone_number = "", std::string darkest_secret = "") : _first_name(first_name), _last_name(last_name), _nickname(nickname), _phone_number(phone_number), _darkest_secret(darkest_secret) {};
-			~Contact() {};
+			Contact(std::string first_name = "", std::string last_name = "", std::string nickname = "", std::string phone_number = "", std::string darkest_secret = "");
+			~Contact();
 			std::string getFirstName() const;
 			std::string getLastName() const;
 			std::string getNickname() const;
